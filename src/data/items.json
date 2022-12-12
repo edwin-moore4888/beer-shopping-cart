@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Pilsner",
+        "price": 33,
+        "image": "/images/pilsner-urquell.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Kozel",
+        "price": 20,
+        "image": "/images/kozel.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bernard IPA",
+        "price": 29,
+        "image": "/images/bernard-ipa-.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Bernard 10",
+        "price": 21,
+        "image": "/images/bernard_10.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bernard 12",
+        "price": 30,
+        "image": "/images/bernard_12.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Budvar",
+        "price": 22,
+        "image": "/images/budvar.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Matuska",
+        "price": 50,
+        "image": "/images/matuska.jpg"
+    }
+]
+
