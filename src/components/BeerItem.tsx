@@ -33,18 +33,18 @@ export default function BeerItem({ id, name, price, image }: BeerItemProps) {
             </Card.Title>
             <div className="mt-auto">
                 {quantity === 0 ? (
-                    <Button className="w-100" onClick={() => increaseQuantity(id)}>Add To Cart</Button>
+                    <Button className="w-100" onClick={() => increaseQuantity(id)} style={{ backgroundColor: '#006A4E', border: 'none'}}>Add To Cart</Button>
                 ) : <div className="d-flex 
                         align-items-center justify-content-between" 
                         style={{gap: ".5rem"}}>
-                            <Button onClick={() => removeFromCart(id)}>Remove</Button>
+                            <Button onClick={() => removeFromCart(id)} style={{ backgroundColor: '#006A4E', border: 'none'}}>Remove</Button>
                         <div className="d-flex 
                             align-items-center 
                             justify-content-center" 
                             style={{gap: ".5rem"}}>
-                                <Button onClick={() => decreaseQuantity(id)}>-</Button>
+                                <Button onClick={() => decreaseQuantity(id)} style={{ backgroundColor: '#006A4E', border: 'none'}}>-</Button>
                                 <div><span className="fs-4">{quantity}</span> In Cart</div>
-                                <Button onClick={() => increaseQuantity(id)}>+</Button>
+                                <Button onClick={() => increaseQuantity(id)} style={{ backgroundColor: '#006A4E', border: 'none'}}>+</Button>
                         </div>
 
                     </div>
