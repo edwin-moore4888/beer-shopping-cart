@@ -1,5 +1,6 @@
 import { Button, Card } from "react-bootstrap"
 import { useShoppingCart } from "../context/ShoppingCartContext"
+import styles from "../BeerItem.module.css"
 
 type BeerItemProps = {
     id: number,
@@ -18,7 +19,7 @@ export default function BeerItem({ id, name, price, image }: BeerItemProps) {
 
     const quantity = getBeerQuantity(id)
     return ( 
-    <Card className="h-100">
+    <Card className={`h-100 ${styles.card}`}>
         <Card.Img 
             variant="top" 
             src={image} 
@@ -37,7 +38,7 @@ export default function BeerItem({ id, name, price, image }: BeerItemProps) {
                 ) : <div className="d-flex 
                         align-items-center justify-content-between" 
                         style={{gap: ".5rem"}}>
-                            <Button onClick={() => removeFromCart(id)} style={{ backgroundColor: '#006A4E', border: 'none'}}>Remove</Button>
+                            <Button onClick={() => removeFromCart(id)} variant='outline-secondary'>Remove</Button>
                         <div className="d-flex 
                             align-items-center 
                             justify-content-center" 
